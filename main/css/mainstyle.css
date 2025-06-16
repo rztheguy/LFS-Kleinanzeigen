@@ -4,6 +4,10 @@
     --default-background: #ffffff;
 }
 
+.parent.title h1 {
+    color: var(--main-color);
+}
+
 .title {
     color: var(--main-color);
 }
