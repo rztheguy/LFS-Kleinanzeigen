@@ -1,6 +1,7 @@
 :root {
     --main-color: #005504;
     --secondary-main-color: #009107;
+    --active-color: #e2ff60;
     --text-color: #cfffd1;
     --secondary-text-color: #e8ffe9;
     --default-background: #ffffff;
@@ -44,7 +45,7 @@
     grid-row: 2 / 3;
     grid-column: 1;
     background: var(--default-background);
-    min-height: 900px;
+    min-height: 2000px;
 }
 
 .parent aside {
@@ -58,6 +59,9 @@
     grid-row: 4;
     grid-column: 1 / -1;
     background: var(--default-background);
+    position: sticky;
+    bottom: 10px;
+    z-index: 100;
 }
 
 .parent header,
@@ -123,7 +127,20 @@
     background-color: var(--text-color);
 }
 
+.activeSite {
+    color: var(--active-color);
+    cursor: pointer;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 150;
+}
+
+a {
+    color: var(--main-color);
+}
+
+a:visited {
+    color: var(--secondary-main-color);
 }
