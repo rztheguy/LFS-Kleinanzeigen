@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andreas Förster">
+    <title>LFS Kleinanzeigen - Hochladen Bücher</title>
+    <link rel="icon" type="image/png" href="../../images/lfsGoesGreen.png">
+    <link rel="stylesheet" href="../../css/mainstyle.css">
+</head>
+
+<body class="main">
+    <div class="parent">
+        <header class="title">
+            <a href="../index.html">
+                <div class="centerdiv">
+                    <picture>
+                        <img src="../../images/lfsGoesGreen.png" alt="" class="logo">
+                    </picture>
+                    <h1>Kleinanzeigen - Hochladen Bücher</h1>
+                </div>
+            </a>
+        </header>
+
+        <main>
+            <form class="book-upload-form">
+                <div class="form-group">
+                    <label for="verkaufsgegenstand">Verkaufsgegenstand:</label>
+                    <select id="verkaufsgegenstand" name="verkaufsgegenstand" required onchange="document.getElementById('other-item').style.display = this.value === 'sonstiges' ? 'block' : 'none';">
+                        <option value="">Bitte wählen</option>
+                        <option value="buch">Buch</option>
+                        <option value="heft">Heft</option>
+                        <option value="sonstiges">Sonstiges</option>
+                    </select>
+                    <input type="text" id="other-item" name="other-item" placeholder="Bitte angeben" style="display:none; margin-top:0.5em;">
+                </div>
+                <div class="form-group">
+                    <label for="titel">Titel:</label>
+                    <input type="text" id="titel" name="titel" required>
+                </div>
+                <div class="form-group">
+                    <label for="untertitel">Untertitel:</label>
+                    <input type="text" id="untertitel" name="untertitel">
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <input type="text" id="autor" name="autor">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN:</label>
+                    <input type="number" id="isbn" name="isbn">
+                </div>
+                <div class="form-group">
+                    <label for="beschreibung">Beschreibung:</label>
+                    <textarea id="beschreibung" name="beschreibung" rows="3" style="resize: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="besonderheiten">Besonderheiten (z.B. Markierungen, wie neu):</label>
+                    <input type="text" id="besonderheiten" name="besonderheiten">
+                </div>
+                <div class="form-group">
+                    <label for="zustand">Zustand:</label>
+                    <select id="zustand" name="zustand" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="neuwertig">Neuwertig</option>
+                        <option value="gut">Gut</option>
+                        <option value="gebraucht">Gebraucht</option>
+                        <option value="gratis">Zu verschenken</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preis">Preis (€):</label>
+                    <input type="number" id="preis" name="preis" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="moodleName">Moodle-Name / Echter Name:</label>
+                    <input type="text" id="moodleName" name="moodleName" required>
+                </div>
+                <button type="submit" class="orderbtn">Hochladen</button>
+            </form>
+        </main>
+
+        <aside>
+            <div class="centerdiv">
+                <div class="dropdown">
+                    <button class="btn">Artikel</button>
+                    <div class="dropdown-content">
+                        <a href="../shirt/content-shirt.html">Lfs-Shirts</a>
+                        <a href="content-buch.html">Bücher</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn">Hochladen</button>
+                    <div class="dropdown-content">
+                        <a href="../shirt/shirt-put-online.html">Lfs-Shirts</a>
+                        <a href="buch-put-online.html">Bücher</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn">Kontakt</button>
+                    <div class="dropdown-content">
+                        <a href="../impressum.html">Impressum</a>
+                        <a href="../kontakt.html">Lehrer</a>
+                    </div>
+                </div>
+            </div>
+
+            <p>Neuste Infos: </p>
+            <p>Kontaktiere dein Lieblingsprodukt nicht per Email, sondern die Person direkt über Moodle.</p>
+        </aside>
+
+        <footer>
+            <div class="centerdiv">
+                <p>
+                    &copy; 2025 LFS Kleinanzeigen - Apache License 2.0
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

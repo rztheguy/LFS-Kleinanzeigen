@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andreas Förster">
+    <title>LFS Kleinanzeigen - Hochladen Shirt</title>
+    <link rel="icon" type="image/png" href="../../images/lfsGoesGreen.png">
+    <link rel="stylesheet" href="../../css/mainstyle.css">
+</head>
+
+<body class="main">
+    <div class="parent">
+        <header class="title">
+            <a href="../index.html">
+                <div class="centerdiv">
+                    <picture>
+                        <img src="../../images/lfsGoesGreen.png" alt="" class="logo">
+                    </picture>
+                    <h1>Kleinanzeigen - Hochladen Shirt</h1>
+                </div>
+            </a>
+        </header>
+
+        <main>
+            <form class="shirt-upload-form">
+                <div class="form-group">
+                    <label for="farbe">Farbe:</label>
+                    <select id="farbe" name="farbe" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="azar blue">Azar blue</option>
+                        <option value="black">Black</option>
+                        <option value="ice grey">Ice grey</option>
+                        <option value="magenta">Magenta</option>
+                        <option value="navy">Navy</option>
+                        <option value="teal">Teal</option>
+                        <option value="voilet">Voilet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="schnitt">Schnitt:</label>
+                    <select id="schnitt" name="schnitt" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="damen">Damenschnitt</option>
+                        <option value="herren">Herrenschnitt</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="groesse">Größe:</label>
+                    <select id="groesse" name="groesse" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zustand">Zustand:</label>
+                    <select id="zustand" name="zustand" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="neuwertig">Neuwertig</option>
+                        <option value="gut">gut - 9€</option>
+                        <option value="gratis">zu verschenken</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="moodleName">Moodle-Name:</label>
+                    <input type="text" id="moodleName" name="moodleName" required>
+                </div>
+                <button type="submit" class="orderbtn">Hochladen</button>
+            </form>
+        </main>
+
+        <aside>
+            <div class="centerdiv">
+                <div class="dropdown">
+                    <button class="btn">Artikel</button>
+                    <div class="dropdown-content">
+                        <a href="content-shirt.html">Lfs-Shirts</a>
+                        <a href="../bücher/content-buch.html">Bücher</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn">Hochladen</button>
+                    <div class="dropdown-content">
+                        <a href="shirt-put-online.html">Lfs-Shirts</a>
+                        <a href="../bücher/buch-put-online.html">Bücher</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn">Kontakt</button>
+                    <div class="dropdown-content">
+                        <a href="../impressum.html">Impressum</a>
+                        <a href="../kontakt.html">Lehrer</a>
+                    </div>
+                </div>
+            </div>
+
+            <p>Neuste Infos: </p>
+            <p>Kontaktiere dein Lieblingsprodukt nicht per Email, sondern die Person direkt über Moodle.</p>
+        </aside>
+
+        <footer>
+            <div class="centerdiv">
+                <p>
+                    &copy; 2025 LFS Kleinanzeigen - Apache License 2.0
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

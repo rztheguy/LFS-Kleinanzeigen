@@ -45,7 +45,7 @@
     grid-row: 2 / 3;
     grid-column: 1;
     background: var(--default-background);
-    min-height: 2000px;
+    /* min-height: 2000px; */
 }
 
 .parent aside {
@@ -130,6 +130,51 @@
 .activeSite {
     color: var(--active-color);
     cursor: pointer;
+}
+
+.book-upload-form,
+.shirt-upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 2em auto;
+    padding: 2em;
+    background: var(--secondary-background);
+    border-radius: var(--default-border-radius);
+    box-shadow: var(--default-shadow);
+    max-width: 400px;
+}
+
+.orderbtn {
+    background-color: var(--secondary-background);
+    color: var(--main-color);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    max-height: 40px;
+    min-width: 90px;
+    border-radius: var(--default-border-radius);
+    align-content: center;
+}
+
+.book-upload-form input,
+.shirt-upload-form input,
+.book-upload-form textarea,
+.shirt-upload-form textarea,
+.book-upload-form select,
+.shirt-upload-form select {
+    border-radius: var(--default-border-radius);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
 }
 
 body {
